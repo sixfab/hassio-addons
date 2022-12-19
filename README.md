@@ -1,2 +1,2 @@
-# sixfab-cellular-hassio-addon
-Homeassistant addan for providing cellular connectivity by using Sixfab cellular solutions
+# Sixfab Home Assistant Addons
+Homeassistant addons developed by Sixfab
