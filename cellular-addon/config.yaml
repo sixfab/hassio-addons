@@ -1,0 +1,30 @@
+name: "Sixfab Cellular"
+description: "Cellular Connectivity for Raspberry Pi"
+version: "0.1.0"
+slug: "sixfab-cellular"
+init: false
+host_network: true
+usb: true
+udev: true
+startup: services
+
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+options:
+  module: EG25-G
+  port: /dev/ttyUSB2
+  apn: "super"
+  interval: 60
+  debug: false
+
+schema:
+  module: list(EG25-G)
+  port: device(subsystem=tty)
+  apn: str
+  interval: int
+  debug: bool
